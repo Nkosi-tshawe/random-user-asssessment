@@ -1,0 +1,69 @@
+/* You can add global styles to this file, and also import other style files */
+              
+              
+@import "assets/css/styles.4a2706caecf62b187ba2.css";
+
+
+$color-blk: #2c2e31;
+$color-grey:#f9f9f9;
+
+.user-theme {
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    background-color: $color-grey;
+
+
+    .overlay {
+        background-color: $color-blk;
+        height:50%;
+        position: absolute;
+            left:0;
+            right:0;
+        z-index: 0;
+    }
+
+    .l-row {
+       width:100%;
+    }
+
+    .l-col {
+        display: flex;
+    }
+
+    .c-card {
+        flex:1;
+       
+        align-self: center;
+        margin:0 auto;
+        position:relative;
+        border-left:0;
+        border-right:0;
+        border-radius:4px;
+        word-break: break-all;
+        z-index:1;
+        .c-card__header {
+            height: 85px;
+            margin-bottom: 75px;
+            background-color:$color-grey;
+    
+            .u-image {
+                background-color: #fff;
+                border: 1px solid rgba($color-blk,.25);
+                padding:5px;
+    
+            }
+
+        
+        }
+
+        .content {
+            padding: 0 15px;
+        }
+
+        @media ( min-width: 720px ) {
+            max-width:730px;
+        }
+    }
+   
+}
